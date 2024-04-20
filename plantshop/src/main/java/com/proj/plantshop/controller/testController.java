@@ -9,7 +9,13 @@ public class testController {
 	
 	@RequestMapping("/")
 	public String main(Model model) {
-//		model.addAttribute()
+		model.addAttribute("data", "test");
 		return "index";
+	}
+	
+	@RequestMapping("/pay/pay")
+	public String pay(Model model) {
+//		model.addAttribute()
+		return "/pay/pay";
 	}
 }
